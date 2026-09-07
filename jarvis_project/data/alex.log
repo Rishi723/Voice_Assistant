@@ -2584,3 +2584,141 @@ TypeError: run_command() got an unexpected keyword argument 'intent'
 11:18:45 [DEBUG] asyncio: Using proactor: IocpProactor
 11:18:49 [DEBUG] llm.ollama_client: Sending prompt to Ollama: http://localhost:11434/api/generate
 11:18:49 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:11434
+23:38:01 [DEBUG] httpcore.connection: connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=3 socket_options=None
+23:38:01 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002B1A426CCD0>
+23:38:01 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x000002B1A612B530> server_hostname='huggingface.co' timeout=3
+23:38:01 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002B1A5830C10>
+23:38:01 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: send_request_headers.complete
+23:38:01 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: send_request_body.complete
+23:38:01 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Mon, 07 Sep 2026 18:07:35 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"164f-cVMc19JX8QJwuU/ZVV3kcWXr7tM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6a9efd67-1a67d69757a2a05b7cc882fe;daa8a97b-018f-4070-858f-7adc6384123c'), (b'RateLimit', b'"api";r=476;t=5'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 385cfd796e25d527c050fe80f47fa802.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'X-Amz-Cf-Id', b'YmIlPL8LpbS49Udfkqlpboyeu2ucrHOmQ7m9Ioxe9Ss9xo2R5S7UtA=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+23:38:01 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+23:38:01 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: receive_response_body.complete
+23:38:01 [DEBUG] httpcore.http11: response_closed.started
+23:38:01 [DEBUG] httpcore.http11: response_closed.complete
+23:38:01 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: send_request_headers.complete
+23:38:01 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: send_request_body.complete
+23:38:01 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Mon, 07 Sep 2026 18:07:36 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"abe-nRx1kJNoy1JNEgsHejYBlsK0OqM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6a9efd68-1edf6afa3b94f4f945ca83ae;906187ed-7af5-40e2-83a9-42c659c0513f'), (b'RateLimit', b'"api";r=475;t=4'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 385cfd796e25d527c050fe80f47fa802.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'X-Amz-Cf-Id', b'iqfItUguPwNk27qq_KxoTsCUFfLuEhWinfyX0v_b3DqFxG0w54wz_g=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+23:38:01 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/revision/main "HTTP/1.1 200 OK"
+23:38:01 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: receive_response_body.complete
+23:38:01 [DEBUG] httpcore.http11: response_closed.started
+23:38:01 [DEBUG] httpcore.http11: response_closed.complete
+23:38:01 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: send_request_headers.complete
+23:38:01 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+23:38:01 [DEBUG] httpcore.http11: send_request_body.complete
+23:38:01 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+23:38:02 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'797'), (b'Connection', b'keep-alive'), (b'Date', b'Mon, 07 Sep 2026 18:07:36 GMT'), (b'ETag', b'W/"31d-fHKd5JyowaqC+iKKtdkAn2t63zs"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6a9efd68-60cfce9751dae49776931255;68722a3f-5d8e-4024-b713-9b87aa4d7d61'), (b'RateLimit', b'"api";r=474;t=4'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 385cfd796e25d527c050fe80f47fa802.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'X-Amz-Cf-Id', b'pS0OJAa3rOCARPQ3Nl90mhzdUpD6MiBa6SdFGIizMhGYtiTaLpCq8g=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+23:38:02 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/tree/536b0662742c02347bc0e980a01041f333bce120?recursive=true&expand=false "HTTP/1.1 200 OK"
+23:38:02 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+23:38:02 [DEBUG] httpcore.http11: receive_response_body.complete
+23:38:02 [DEBUG] httpcore.http11: response_closed.started
+23:38:02 [DEBUG] httpcore.http11: response_closed.complete
+23:38:06 [DEBUG] utils.cleanup: TTS temp-file cleanup registered.
+23:38:06 [INFO] __main__: Building program database…
+23:38:06 [INFO] services.app_service: Scanning installed programs…
+23:38:13 [INFO] services.app_service: Found 85 desktop apps + 269 Store apps.
+23:38:13 [INFO] __main__: Building music index…
+23:38:13 [INFO] services.music_service: Music index: 14 tracks found.
+23:38:13 [INFO] __main__: Calibrating microphone…
+23:38:13 [INFO] speech.recognizer: Calibrating microphone…
+23:38:16 [INFO] speech.recognizer: Calibration done. Say 'friday' to activate.
+23:38:16 [INFO] speech.tts: Assistant: Friday assistant activated. Say Friday to begin.
+23:38:16 [DEBUG] asyncio: Using proactor: IocpProactor
+23:38:23 [INFO] speech.recognizer: Listening…
+23:38:29 [INFO] speech.recognizer: Listening…
+23:38:31 [INFO] faster_whisper: Processing audio with duration 00:01.394
+23:38:31 [DEBUG] faster_whisper: Processing segment at 00:00.000
+23:38:47 [DEBUG] faster_whisper: Compression ratio threshold is not met with temperature 0.0 (5.635294 > 2.400000)
+23:38:54 [DEBUG] faster_whisper: Compression ratio threshold is not met with temperature 0.2 (8.095238 > 2.400000)
+23:38:56 [DEBUG] faster_whisper: Log probability threshold is not met with temperature 0.4 (-1.372308 < -1.000000)
+23:38:56 [DEBUG] faster_whisper: No speech threshold is met (0.782230 > 0.600000)
+23:38:57 [INFO] speech.recognizer: Listening…
+23:39:00 [INFO] faster_whisper: Processing audio with duration 00:02.694
+23:39:00 [DEBUG] faster_whisper: Processing segment at 00:00.000
+23:39:05 [DEBUG] faster_whisper: Log probability threshold is not met with temperature 0.0 (-1.222708 < -1.000000)
+23:39:07 [DEBUG] faster_whisper: Log probability threshold is not met with temperature 0.2 (-1.328308 < -1.000000)
+23:39:09 [DEBUG] faster_whisper: Log probability threshold is not met with temperature 0.4 (-1.479010 < -1.000000)
+23:39:10 [DEBUG] faster_whisper: Log probability threshold is not met with temperature 0.6 (-1.670562 < -1.000000)
+23:39:12 [DEBUG] faster_whisper: Log probability threshold is not met with temperature 0.8 (-1.748502 < -1.000000)
+23:39:14 [DEBUG] faster_whisper: Log probability threshold is not met with temperature 1.0 (-2.489691 < -1.000000)
+23:39:14 [DEBUG] faster_whisper: Reset prompt. prompt_reset_on_temperature threshold is met 1.000000 > 0.500000
+23:39:14 [INFO] speech.recognizer: You: i am trying to do a close-up.  hey, friday!
+23:39:14 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:11434
+23:40:46 [WARNING] llm.intent_classifier: Classifier timed out (90s) – falling back to conversation mode
+23:40:46 [DEBUG] commands.router: Intent: mode=conversation, tool=None, args=None
+23:40:46 [INFO] speech.tts: Assistant: Let me think...
+23:40:46 [DEBUG] asyncio: Using proactor: IocpProactor
+23:40:50 [DEBUG] llm.ollama_client: Sending prompt to Ollama: http://localhost:11434/api/generate
+23:40:50 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:11434
+23:41:16 [INFO] __main__: KeyboardInterrupt – shutting down.
+23:41:16 [INFO] __main__: Alex Assistant shut down gracefully.
+23:41:16 [DEBUG] httpcore.connection: close.started
+23:41:16 [DEBUG] httpcore.connection: close.complete
+23:41:48 [DEBUG] httpcore.connection: connect_tcp.started host='huggingface.co' port=443 local_address=None timeout=None socket_options=None
+23:41:48 [DEBUG] httpcore.connection: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000232E2472F50>
+23:41:48 [DEBUG] httpcore.connection: start_tls.started ssl_context=<ssl.SSLContext object at 0x00000232E42BBA40> server_hostname='huggingface.co' timeout=None
+23:41:48 [DEBUG] httpcore.connection: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000232E3A22910>
+23:41:48 [DEBUG] httpcore.http11: send_request_headers.started request=<Request [b'GET']>
+23:41:48 [DEBUG] httpcore.http11: send_request_headers.complete
+23:41:48 [DEBUG] httpcore.http11: send_request_body.started request=<Request [b'GET']>
+23:41:48 [DEBUG] httpcore.http11: send_request_body.complete
+23:41:48 [DEBUG] httpcore.http11: receive_response_headers.started request=<Request [b'GET']>
+23:41:48 [DEBUG] httpcore.http11: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Mon, 07 Sep 2026 18:11:22 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"abe-nRx1kJNoy1JNEgsHejYBlsK0OqM"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6a9efe4a-645807520ace3adf649eb471;2ab801ca-34d1-44ca-afd8-9eac5177325d'), (b'RateLimit', b'"api";r=488;t=78'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 72a3ed06e7082822e954f6301af7624a.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'DEL51-P7'), (b'X-Amz-Cf-Id', b'HEOCmxxKIpSZO1E5bKPcQhvZgsWt03s35njoCrcKpj-kPlZhjfnfcA=='), (b'Strict-Transport-Security', b'max-age=31536000')])
+23:41:48 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small/revision/main "HTTP/1.1 200 OK"
+23:41:48 [DEBUG] httpcore.http11: receive_response_body.started request=<Request [b'GET']>
+23:41:48 [DEBUG] httpcore.http11: receive_response_body.complete
+23:41:48 [DEBUG] httpcore.http11: response_closed.started
+23:41:48 [DEBUG] httpcore.http11: response_closed.complete
+23:41:52 [DEBUG] utils.cleanup: TTS temp-file cleanup registered.
+23:41:52 [INFO] __main__: Building program database…
+23:41:52 [INFO] services.app_service: Scanning installed programs…
+23:41:57 [INFO] services.app_service: Found 85 desktop apps + 269 Store apps.
+23:41:57 [INFO] __main__: Building music index…
+23:41:57 [INFO] services.music_service: Music index: 14 tracks found.
+23:41:57 [INFO] __main__: Calibrating microphone…
+23:41:57 [INFO] speech.recognizer: Calibrating microphone…
+23:41:59 [INFO] speech.recognizer: Calibration done. Say 'friday' to activate.
+23:41:59 [INFO] speech.tts: Assistant: Friday assistant activated. Say Friday to begin.
+23:41:59 [DEBUG] asyncio: Using proactor: IocpProactor
+23:42:06 [INFO] speech.recognizer: Listening…
+23:42:09 [INFO] faster_whisper: Processing audio with duration 00:01.324
+23:42:09 [DEBUG] faster_whisper: Processing segment at 00:00.000
+23:42:14 [INFO] speech.recognizer: You: friday
+23:42:14 [INFO] speech.tts: Assistant: Yes Boss?
+23:42:14 [DEBUG] asyncio: Using proactor: IocpProactor
+23:42:18 [INFO] speech.recognizer: Listening…
+23:42:21 [INFO] faster_whisper: Processing audio with duration 00:01.556
+23:42:21 [DEBUG] faster_whisper: Processing segment at 00:00.000
+23:42:26 [INFO] speech.recognizer: You: open youtube
+23:42:26 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:11434
+23:43:08 [DEBUG] urllib3.connectionpool: http://localhost:11434 "POST /api/generate HTTP/1.1" 200 None
+23:43:08 [DEBUG] commands.router: Intent: mode=tool, tool=open_app, args={'app': 'youtube'}
+23:43:08 [INFO] speech.tts: Assistant: Opening youtube
+23:43:08 [DEBUG] asyncio: Using proactor: IocpProactor
+23:43:12 [INFO] commands.router: Tool 'open_app' executed successfully
+23:43:13 [INFO] speech.recognizer: Listening…
+23:43:20 [INFO] speech.recognizer: Listening…
+23:43:27 [INFO] speech.recognizer: Listening…
+23:43:33 [INFO] speech.recognizer: Listening…
+23:43:36 [INFO] faster_whisper: Processing audio with duration 00:02.206
+23:43:36 [DEBUG] faster_whisper: Processing segment at 00:00.000
+23:43:41 [INFO] speech.recognizer: You: friday
+23:43:41 [INFO] speech.tts: Assistant: Yes Boss?
+23:43:41 [DEBUG] asyncio: Using proactor: IocpProactor
+23:43:45 [INFO] speech.recognizer: Listening…
+23:43:50 [INFO] faster_whisper: Processing audio with duration 00:01.742
+23:43:50 [DEBUG] faster_whisper: Processing segment at 00:00.000
+23:43:55 [INFO] speech.recognizer: You: open whatsapp web
+23:43:55 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:11434
+23:45:27 [INFO] __main__: KeyboardInterrupt – shutting down.
+23:45:27 [INFO] __main__: Alex Assistant shut down gracefully.
+23:45:27 [DEBUG] httpcore.connection: close.started
+23:45:27 [DEBUG] httpcore.connection: close.complete
